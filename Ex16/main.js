@@ -1,0 +1,11 @@
+var friendsNames = ['Affan', 'Jibran', 'Farhan'];
+var notComing = friendsNames[0];
+console.log(notComing, 'Nhi aa sakta');
+friendsNames.splice(0, 1, 'SaadUllah');
+console.log("Good News! I have arranged the dinner at the Kababjees Dodarya Restaurant.Some more people will be joining us");
+friendsNames.unshift("Ali Raza");
+friendsNames.push("Mahad");
+var newMiddlePerson = Math.floor(friendsNames.length / 2);
+friendsNames.splice(newMiddlePerson, 0, "Hanza");
+console.log('Updeted List');
+friendsNames.forEach(function (finalList) { return console.log("Assalamualaikum ".concat(finalList, " join us tommorow")); });
